@@ -1,2 +1,102 @@
-.face {
+.head {
+  width: 700px;
+  height: 700px;
+  border: 1px solid $face-bg;
+  .hair {
+    position: relative;
+    width: 100%;
+    .center-part{
+      position: absolute;
+      left: 180px;
+      background-color: $face-bg;
+      width: 350px;
+      height: 200px;
+      &:before {
+        content: '';
+        background-color: $body-bg;
+        width: 128px;
+        height: 25px;
+        transform: rotate(-12deg);
+        position: absolute;
+        left: -15px;
+        top: -13px;
+      }
+      &:after{
+        content: '';
+        background-color: $body-bg;
+        width: 128px;
+        height: 25px;
+        transform: rotate(12deg);
+        position: absolute;
+        right: -15px;
+        top: -13px;
+      }
+    }
+    .left-part{
+      position: absolute;
+      left: 120px;
+      top: 13px;
+      background-color: $face-bg;
+      width: 60px;
+      height: 320px;
+      &:before {
+        content: '';
+        background-color: $body-bg;
+        width: 157px;
+        height: 67px;
+        transform: rotate(-53deg);
+        position: absolute;
+        left: -59px;
+        top: -4px;
+      }
+      &:after{
+        content: '';
+        background-color: $face-bg;
+        width: 128px;
+        height: 53px;
+        transform: rotate(117deg);
+        position: absolute;
+        right: -81px;
+        top: 184px;
+      }
+    }
+    .left-middle-part {
+      position: absolute;
+      left: 83px;
+      top: 231px;
+      width: 50px;
+      height: 114px;
+      background-color: $body-bg;
+      z-index: 1;
+      transform: rotate(-13deg);
+    }
+    .left-down-part{
+      position: absolute;
+      left: 170px;
+      top: 332px;
+      width: 10px;
+      height: 77px;
+      background-color: $face-bg;
+      &:before {
+        content: '';
+        background-color: $face-bg;
+        width: 72px;
+        height: 14px;
+        transform: rotate(-111deg);
+        position: absolute;
+        left: -46px;
+        top: -21px;
+      }
+      &:after{
+        content: '';
+        background-color: $face-bg;
+        width: 51px;
+        height: 9px;
+        transform: rotate(76deg);
+        position: absolute;
+        left: -16px;
+        top: 91px;
+      }
+    }
+  }
 }
